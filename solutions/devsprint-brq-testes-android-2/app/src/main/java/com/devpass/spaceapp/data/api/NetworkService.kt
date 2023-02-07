@@ -11,7 +11,6 @@ object NetworkService {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-
     fun getSpaceXAPI(url: String): SpaceXAPIService =
         initRetrofit(url).create(SpaceXAPIService::class.java)
 }
